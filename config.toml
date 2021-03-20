@@ -46,7 +46,6 @@ googleAnalytics = "UA-142502015-1"
 [params.share]
   enable = true
   addThisId = "ra-6056429fe44ee3ed"
-  inlineToolId = "iahq"
 
 [params.nav]
   showCategories = false
@@ -54,7 +53,7 @@ googleAnalytics = "UA-142502015-1"
 
 [params.profile]
   enable = true
-  avatar = "imgs/lauthorogo.png"
+  avatar = "imgs/author.png"
   name = "Vinesh Raju"
   bio = "I'd love to talk. Feel free to reach me at 👇"
   twitter = "https://twitter.com/theVinesh"
