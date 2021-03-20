@@ -14,43 +14,43 @@ enableRobotsTXT = true
 googleAnalytics = "UA-142502015-1"
 
 [markup.highlight]
-codeFences = true
-noClasses = false
+  codeFences = true
+  noClasses = false
 
 [markup.goldmark.renderer]
-unsafe = false  # enable raw HTML in Markdown
+  unsafe = false  # enable raw HTML in Markdown
 
 [params]
-style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "Jan 2, 2006"
-logo = "" #logo here
-slogan = ""
-license = ""  # CC License
-fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+  style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+  dateFormat = "Jan 2, 2006"
+  logo = "" #logo here
+  slogan = ""
+  license = ""  # CC License
+  fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 
 [params.assets]
-css = ["css/color.css"]
+  css = ["css/color.css"]
 
 [params.comments]
-enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+  enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
 [params.math]
-enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
-use = "katex"  # option: "katex", "mathjax". default: "katex"
+  enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+  use = "katex"  # option: "katex", "mathjax". default: "katex"
 
 [params.syntax]
-use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "xcode"
-darkTheme = "xcode-dark"  # apply this theme in dark mode
+  use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+  theme = "xcode"
+  darkTheme = "xcode-dark"  # apply this theme in dark mode
 
 [params.share]
-enable = false
-addThisId = ""
-inlineToolId = ""
+  enable = true
+  addThisId = "ra-6056429fe44ee3ed"
+  inlineToolId = "iahq"
 
 [params.nav]
-showCategories = false
-showTags = false
+  showCategories = false
+  showTags = false
 
 [params.profile]
   enable = true
@@ -60,3 +60,7 @@ showTags = false
   twitter = "https://twitter.com/theVinesh"
   github = "https://github.com/theVinesh"
   email = "hi@thevinesh.com"
+
+[params.font]
+  googlefonts = ["Oxygen Mono"]
+  fontbody = 'Droid Sans'
