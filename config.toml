@@ -1,5 +1,5 @@
 baseURL = "https://blog.thevinesh.com"
-title = "Blog"
+title = "Vinesh's Blog"
 theme = "hugo-notepadium"
 copyright = "© Vinesh Raju."
 
@@ -62,7 +62,7 @@ url = "https://thevinesh.com"
   enable = true
   avatar = "imgs/logo.png"
   name = "Vinesh Raju"
-  bio = "I am Vinesh Raju a Mobile Application developer from India with a deep focus on UX/UI."
+  bio = "I'd love to talk. Feel free to reach me at 👇"
   twitter = "https://twitter.com/theVinesh"
   github = "https://github.com/theVinesh"
   email = "hi@thevinesh.com"

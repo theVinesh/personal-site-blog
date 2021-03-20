@@ -1,7 +1,7 @@
 ---
 title: "What do I use?"
 description: "I use a lot of Tools, Apps and Services to get by everyday. I've listed down those that I love and use frequently here."
-slug: "uses"
+slug: "what-do-i-use"
 tags: ["uses", "general"]
 ---
 I use a lot of Tools, Apps and Services to get by everyday.
