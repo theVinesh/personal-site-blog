@@ -21,7 +21,7 @@ noClasses = false
 unsafe = false  # enable raw HTML in Markdown
 
 [params]
-style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+style = "light"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 dateFormat = "Jan 2, 2006"
 logo = "" #logo here
 slogan = ""
@@ -52,15 +52,9 @@ inlineToolId = ""
 showCategories = false
 showTags = false
 
-# custom navigation items
-
-[[params.nav.custom]]
-title = "Home"
-url = "https://thevinesh.com"
-
 [params.profile]
   enable = true
-  avatar = "imgs/logo.png"
+  avatar = "imgs/lauthorogo.png"
   name = "Vinesh Raju"
   bio = "I'd love to talk. Feel free to reach me at 👇"
   twitter = "https://twitter.com/theVinesh"
