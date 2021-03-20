@@ -1,3 +1,18 @@
+{{- $profile := .Params.profile -}}
+{{- if not $profile -}}
+  {{- $profile = site.Params.profile -}}
+{{- end -}}
+
+{{- with $profile -}}
+{{- if eq .enable true -}}
+<section class="article author">  
+    {{- with .avatar -}}<img class="avatar" src="{{- . | relURL -}}" alt>{{- end -}}
+  
+    {{- with .name -}}<p class="name">{{- . -}}</p>{{- end -}}
+</section>
+{{- end -}}
+{{- end -}}
+
 <section class="article header">
     <h1 class="article title">{{- .Title | safeHTML -}}</h1>
     {{- $dateFormat := site.Params.dateFormat -}}

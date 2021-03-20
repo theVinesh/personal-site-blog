@@ -457,7 +457,7 @@ b {
 .article.navigation,
 .article.discussion,
 .article.share {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .article.discussion {
@@ -491,17 +491,19 @@ b {
 
 .article.author>* {
     margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .article.author .avatar {
     display: block;
-    max-width: 130px;
+    max-width: 64px;
     margin: auto;
-    border-radius: 3px;
+    border-radius: 50%;;
 }
 
 .article.author .name {
-    font-size: 1.25em;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 .article.author .bio {

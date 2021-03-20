@@ -58,8 +58,7 @@ googleAnalytics = "UA-142502015-1"
   avatar = "imgs/author.png"
   name = "Vinesh Raju"
   bio = "I'd love to talk. Feel free to reach me at 👇"
-  twitter = "https://twitter.com/theVinesh"
-  github = "https://github.com/theVinesh"
+  handle = "theVinesh"
   email = "hi@thevinesh.com"
 
 [params.font]
