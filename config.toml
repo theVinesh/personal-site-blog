@@ -21,7 +21,7 @@ noClasses = false
 unsafe = false  # enable raw HTML in Markdown
 
 [params]
-style = "light"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 dateFormat = "Jan 2, 2006"
 logo = "" #logo here
 slogan = ""
