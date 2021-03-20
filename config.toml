@@ -1,0 +1,68 @@
+baseURL = "https://blog.thevinesh.com"
+title = "Blog"
+theme = "hugo-notepadium"
+copyright = "© Vinesh Raju."
+
+languageCode = "en-in"
+hasCJKLanguage = false
+
+enableRobotsTXT = true
+
+# Enable Disqus
+#disqusShortname = "XXX"
+
+googleAnalytics = "UA-142502015-1"
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = false  # enable raw HTML in Markdown
+
+[params]
+style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "Jan 2, 2006"
+logo = "" #logo here
+slogan = ""
+license = ""  # CC License
+fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+
+[params.assets]
+css = ["css/color.css"]
+
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+[params.math]
+enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+use = "katex"  # option: "katex", "mathjax". default: "katex"
+
+[params.syntax]
+use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "xcode"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
+
+[params.share]
+enable = false
+addThisId = ""
+inlineToolId = ""
+
+[params.nav]
+showCategories = false
+showTags = false
+
+# custom navigation items
+
+[[params.nav.custom]]
+title = "Home"
+url = "https://thevinesh.com"
+
+[params.profile]
+  enable = true
+  avatar = "imgs/logo.png"
+  name = "Vinesh Raju"
+  bio = "I am Vinesh Raju a Mobile Application developer from India with a deep focus on UX/UI."
+  twitter = "https://twitter.com/theVinesh"
+  github = "https://github.com/theVinesh"
+  email = "hi@thevinesh.com"
