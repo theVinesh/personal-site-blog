@@ -29,7 +29,7 @@ googleAnalytics = "UA-142502015-1"
   fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 
 [params.assets]
-  css = ["css/color.css"]
+  css = ["css/color.css","css/font.css"]
 
 [params.comments]
   enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
@@ -61,5 +61,4 @@ googleAnalytics = "UA-142502015-1"
   email = "hi@thevinesh.com"
 
 [params.font]
-  googlefonts = ["Oxygen Mono"]
-  fontbody = 'Droid Sans'
+  googlefont = "Oxygen Mono"

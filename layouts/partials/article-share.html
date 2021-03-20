@@ -2,9 +2,10 @@
 {{- if $addThisId -}}
 {{- if or (eq .Params.share true) (and (ne .Params.share false) (eq site.Params.share.enable true)) -}}
     {{- if (gt (len $addThisId) 0) -}}
+    <p>Liked what you just read?</p>
+    <p>Spread the word!</p>
         <div class="article share addthis_inline_share_toolbox"></div> 
-        {{- $js := resources.Get "js/addthis_widget.js" | resources.Minify | resources.Fingerprint "sha384" -}}
-        <script defer src="{{- $js.RelPermalink -}}#pubid={{- $addThisId -}}" integrity="{{- $js.Data.Integrity -}}"></script>
+        <script defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{- $addThisId -}}"></script>
     {{- end -}}
 {{- end -}}
 {{- end -}}
