@@ -123,7 +123,7 @@ b,
 
 .article-container {
     background-color: var(--nero);
-    box-shadow: 0 0 0 0 var(--black);
+    box-shadow: none;
 }
 
 @media (max-width: 500px) {
