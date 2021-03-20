@@ -1,8 +1,10 @@
 ---
 title: "What do I use?"
-description: "I use a lot of Tools, Apps and Services to get by everyday. I've listed down those that I love and use frequently here."
+description: "{{ .Summary }}"
 slug: "what-do-i-use"
-tags: ["uses", "general"]
+tags: ["about me", "general"]
+date: 2020-06-21T02:53:51+05:30
+hidedate: true
 ---
 I use a lot of Tools, Apps and Services to get by everyday.
 I've listed down those that I love and use frequently here.
