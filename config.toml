@@ -46,7 +46,7 @@ googleAnalytics = "UA-142502015-1"
   darkTheme = "xcode-dark"  # apply this theme in dark mode
 
 [params.share]
-  enable = true
+  enable = false
   addThisId = "ra-6056429fe44ee3ed"
 
 [params.nav]
