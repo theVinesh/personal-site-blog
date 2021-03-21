@@ -133,10 +133,10 @@ b,
     }
 }
 
-.article.author .bio {
+.article.author .bio,
+.article.author .article-footer {
     color: var(--doctorWhite);
 }
-
 
 /* border color */
 

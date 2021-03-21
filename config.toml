@@ -31,7 +31,8 @@ googleAnalytics = "UA-142502015-1"
   fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 
 [params.assets]
-  css = ["css/color.css","css/font.css","css/accessibility.css"]
+  css = ["css/color.css","css/font.css","css/accessibility.css","css/tooltip.css"]
+  js = ["js/copy.js"]
 
 [params.comments]
   enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
@@ -46,8 +47,15 @@ googleAnalytics = "UA-142502015-1"
   darkTheme = "xcode-dark"  # apply this theme in dark mode
 
 [params.share]
-  enable = false
-  addThisId = "ra-6056429fe44ee3ed"
+  enable = true
+  hookText = '''
+  Liked what you just read?  
+  Spread the word!
+  '''
+  whatsapp = "https://api.whatsapp.com/send?text="
+  twitter = "https://twitter.com/intent/tweet?url="
+  email = "mailto:?body="
+  # addThisId = "ra-6056429fe44ee3ed"
 
 [params.nav]
   showCategories = false
@@ -57,7 +65,7 @@ googleAnalytics = "UA-142502015-1"
   enable = true
   avatar = "imgs/author.png"
   name = "Vinesh Raju"
-  bio = "I'd love to talk. Feel free to reach me at 👇"
+  articleFooter = "I'd love to talk. Feel free to reach me at 👇"
   handle = "theVinesh"
   email = "hi@thevinesh.com"
 

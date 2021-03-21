@@ -1,11 +1,26 @@
-{{- $addThisId := site.Params.share.addThisId -}}
-{{- if $addThisId -}}
-{{- if or (eq .Params.share true) (and (ne .Params.share false) (eq site.Params.share.enable true)) -}}
-    {{- if (gt (len $addThisId) 0) -}}
-    <p>Liked what you just read?</p>
-    <p>Spread the word!</p>
-        <div class="article share addthis_inline_share_toolbox"></div> 
-        <script defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{- $addThisId -}}"></script>
+{{- $url := replace .Permalink "#" "%23" -}}
+{{- $url = replace $url "." "%2e" -}}
+{{- $share := site.Params.share -}}
+{{- with $share -}}
+{{- if or (eq .Params.share true) (and (ne .Params.share false) (eq $share.enable true)) -}}
+<section class="article share">
+    {{- with .hookText -}}<p class="hook-text">{{- . | markdownify -}}</p>{{- end -}}
+    {{- with .whatsapp -}}
+    <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=wa" target="_blank"
+        rel="noopener noreferrer"><img class="icon" src="/imgs/icon_whatsapp.png"></img>&nbsp;</a>
     {{- end -}}
+    {{- with .twitter -}}
+    <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=twtr" target="_blank"
+        rel="noopener noreferrer"><img class="icon" src="/imgs/icon_twitter.png"></img>&nbsp;</a>
+    {{- end -}}
+    {{- with .email -}}
+    <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=mail" target="_blank"
+        rel="noopener noreferrer"><img class="icon" src="/imgs/icon_email.png"></img></span>&nbsp;</a>
+    {{- end -}}
+    <div class="item tooltip">   
+        <a class="item" href="{{- $url -}}?utm_medium=cpy" target="_blank"
+        rel="noopener noreferrer" onclick="copyURI(event)" onmouseout="resetTooltip()"><img class="icon" src="/imgs/icon_copy.png"></img>&nbsp;<span class="tooltip text" id="copy-tooltip">Copy</span></a>
+    </div>
+</section>
 {{- end -}}
 {{- end -}}
