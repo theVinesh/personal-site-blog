@@ -54,7 +54,7 @@ googleAnalytics = "UA-142502015-1"
   '''
   whatsapp = "https://api.whatsapp.com/send?text="
   twitter = "https://twitter.com/intent/tweet?url="
-  email = "mailto:?body="
+  email = "mailto://?body="
   # addThisId = "ra-6056429fe44ee3ed"
 
 [params.nav]

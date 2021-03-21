@@ -4,7 +4,7 @@
 {{- with $share -}}
 {{- if or (eq .Params.share true) (and (ne .Params.share false) (eq $share.enable true)) -}}
 <section class="article share">
-    {{- with .hookText -}}<p class="hook-text">{{- . | markdownify -}}</p>{{- end -}}
+    {{- with .hookText -}}<div class="hook-text">{{- . | markdownify -}}</div>{{- end -}}
     {{- with .whatsapp -}}
     <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=wa" target="_blank"
         rel="noopener noreferrer"><img class="icon" src="/imgs/icon_whatsapp.png"></img>&nbsp;</a>
