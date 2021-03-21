@@ -1,14 +1,11 @@
 function copyURI(event) {
     event.preventDefault();
-    navigator.clipboard.writeText(event.target.getAttribute('href')).then(() => {
-      var tooltip = document.getElementById("copy-tooltip");
-      tooltip.innerHTML = "Copied!";
-    }, () => {
-      /* clipboard write failed */
-    });
+    navigator.clipboard.writeText(event.target.getAttribute('href')).then(() => showTooltip("Copied!"), () => showTooltip("Couldn't copy"));
 }
 
-function resetTooltip(event) {
+function showTooltip(message){
   var tooltip = document.getElementById("copy-tooltip");
-  tooltip.innerHTML = "Copy";
+  tooltip.innerHTML = message;
+  tooltip.style.visibility = "visible";
+  setTimeout(() => tooltip.style.visibility = "hidden", 800);
 }
