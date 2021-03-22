@@ -455,31 +455,8 @@ b {
 .article.license,
 .article.author,
 .article.navigation,
-.article.discussion,
-.article.share {
+.article.discussion {
     margin-top: 16px;
-}
-
-.article.share .item .icon {
-    padding: 12px;
-}
-
-.article.share .item {
-    text-decoration: none;
-    display: inline-block;
-    margin-right: 8px;
-    height: 48px;
-    width: 48px;
-    color: var(--doctorWhite);
-    background-color: var(--brick);
-}
-
-.article.share .item:hover{
-    opacity: 0.9;
-}
-
-.article.share .hook-text {
-    margin-bottom: 8px;
 }
 
 .article.discussion {

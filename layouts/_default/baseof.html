@@ -9,11 +9,11 @@
         {{- block "main" . -}}{{- end -}}
     </section>
     {{- partial "footer.html" . -}}
+
     {{- $summary := .Summary -}}
     {{- if not $summary -}}
         {{- $summary = site.Params.profile.description -}}
     {{- end -}}
-
     {{- if $summary -}}
     <div class="word-wall noprint"
         text="{{- $summary | plainify | safeHTML -}}">

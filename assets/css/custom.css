@@ -2,6 +2,32 @@ body {
     font-family: "Oxygen Mono";
 }
 
+.article.share {
+    margin-top: 16px;
+}
+
+.article.share .item .icon {
+    padding: 12px;
+}
+
+.article.share .item {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 8px;
+    height: 48px;
+    width: 48px;
+    color: var(--doctorWhite);
+    background-color: var(--fireEngine);
+}
+
+.article.share .item:hover{
+    opacity: 0.9;
+}
+
+.article.share .hook-text {
+    margin-bottom: 8px;
+}
+
 .skip-link {
     position: absolute;
     top: -40px;
@@ -14,16 +40,6 @@ body {
 
 .skip-link:focus {
     top: 0;
-}
-
-@media print {
-    .noprint {
-        display: none
-    }
-
-    .onlyprint {
-        display: inherit
-    }
 }
 
 .word-wall:after {
@@ -41,4 +57,14 @@ body {
     text-overflow: clip;
     overflow: hidden;
     word-break: break-all
+}
+
+@media print {
+    .noprint {
+        display: none
+    }
+
+    .onlyprint {
+        display: inherit
+    }
 }

@@ -3,7 +3,7 @@
 {{- $share := site.Params.share -}}
 {{- with $share -}}
 {{- if or (eq .Params.share true) (and (ne .Params.share false) (eq $share.enable true)) -}}
-<section class="article share">
+<section class="article share noprint">
     {{- with .hookText -}}<div class="hook-text">{{- . | markdownify -}}</div>{{- end -}}
     {{- with .whatsapp -}}
     <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=wa" target="_blank"
