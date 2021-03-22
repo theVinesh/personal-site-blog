@@ -6,10 +6,9 @@
 <meta name="robots" content="index,follow">
 {{- $summary := .Summary -}}
 {{- if not $summary -}}
-{{- $summary = site.Params.profile.description -}}
+    {{- $summary = site.Params.profile.description -}}
 {{- end -}}
 {{- if $summary -}}
-<meta name="description" content="{{- $summary | plainify | safeHTML -}}">
+    <meta name="description" content="{{- $summary | plainify | safeHTML -}}">
 {{- end -}}
-
 <link rel="shortcut icon" type="image/png" href="/imgs/favicon.png" />

@@ -51,12 +51,12 @@ body {
     z-index: -1;
     line-height: 1;
     font-size: 10vmax;
-    opacity: .020;
+    opacity: .03;
     font-weight: 700;
     content: attr(text);
     text-overflow: clip;
     overflow: hidden;
-    word-break: break-all
+    word-break: break-all;
 }
 
 @media print {
