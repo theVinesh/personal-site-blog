@@ -8,7 +8,7 @@ languageCode = "en-uk"
 hasCJKLanguage = false
 
 enableGitInfo = true
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 # Enable Disqus
 #disqusShortname = "XXX"
@@ -31,7 +31,7 @@ googleAnalytics = "UA-142502015-1"
   fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 
 [params.assets]
-  css = ["css/color.css","css/font.css","css/accessibility.css","css/tooltip.css"]
+  css = ["css/color.css","css/custom.css","css/tooltip.css"]
   js = ["js/copy.js"]
 
 [params.comments]
@@ -65,6 +65,11 @@ googleAnalytics = "UA-142502015-1"
   enable = true
   avatar = "imgs/author.png"
   name = "Vinesh Raju"
+  description = '''
+  Hi I'm a mobile applications developer with a deep focus on UX/UI.  
+  I'm from Tirunelveli, Tamil Nadu, India. Anything and everything related to tech excites me.
+  When I'm not codeing, tinkering, eating or sleeping. I occupy my self by sketching, singing and watching a lot of youtube :P
+  '''
   articleFooter = "I'd love to talk. Feel free to reach me at 👇"
   handle = "theVinesh"
   email = "hi@thevinesh.com"

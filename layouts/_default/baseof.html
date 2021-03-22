@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{- site.Language.Lang -}}">
+{{- partial "head.html" . -}}
+
+<body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    {{- partial "header.html" . -}}
+    <section id="content">
+        {{- block "main" . -}}{{- end -}}
+    </section>
+    {{- partial "footer.html" . -}}
+    {{- $summary := .Summary -}}
+    {{- if not $summary -}}
+        {{- $summary = site.Params.profile.description -}}
+    {{- end -}}
+
+    {{- if $summary -}}
+    <div class="word-wall noprint"
+        text="{{- $summary | plainify | safeHTML -}}">
+    </div>
+    {{- end -}}
+</body>
+
+</html>

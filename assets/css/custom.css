@@ -1,0 +1,44 @@
+body {
+    font-family: "Oxygen Mono";
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--brick);
+    color: var(--white);
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+@media print {
+    .noprint {
+        display: none
+    }
+
+    .onlyprint {
+        display: inherit
+    }
+}
+
+.word-wall:after {
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    width: 110%;
+    height: 110%;
+    z-index: -1;
+    line-height: 1;
+    font-size: 10vmax;
+    opacity: .020;
+    font-weight: 700;
+    content: attr(text);
+    text-overflow: clip;
+    overflow: hidden;
+    word-break: break-all
+}
