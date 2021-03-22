@@ -6,6 +6,9 @@
 <meta name="robots" content="index,follow">
 {{- $summary := .Summary -}}
 {{- if $summary -}}
+    {{- if not $summary -}}
+        {{- $summary = site.Params.profile.description -}}
+    {{- end -}}
 <meta name="description" content="{{- $summary | plainify | safeHTML -}}">
 {{- end -}}
 
