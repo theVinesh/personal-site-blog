@@ -1,6 +1,7 @@
 function copyURI(event) {
     event.preventDefault();
-    navigator.clipboard.writeText(event.target.getAttribute('href')).then(() => showTooltip("Copied!"), () => showTooltip("Couldn't copy"));
+    navigator.clipboard.writeText(event.target.getAttribute('href'))
+    .then(() => showTooltip("Copied!"), () => showTooltip("Couldn't copy"));
 }
 
 function showTooltip(message){
