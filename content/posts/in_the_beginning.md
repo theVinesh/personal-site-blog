@@ -2,7 +2,7 @@
 title: "In the beginning"
 description: "{{ .Summary }}"
 tags: ["about me", "general"]
-date: 2021-03-21T02:53:51+05:30
+date: 2021-03-21T02:52:51+05:30
 ---
 
 I've always wanted to set up a website, a blog and write.

@@ -188,7 +188,7 @@ table tr:nth-child(even) {
 }
 
 a {
-    color: var(--tomato);
+    color: var(--fireEngine);
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -441,7 +441,7 @@ b {
 }
 
 .tag {
-    color: rgba(29, 43, 76, .85);
+    color: var(--nero);
 }
 
 .category {
@@ -489,8 +489,8 @@ b {
 }
 
 .article.author>* {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 8x;
+    margin-bottom: 8px;
 }
 
 .article.author .avatar {
@@ -512,6 +512,8 @@ b {
 
 .article.author .details .item {
     display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -524,7 +526,7 @@ b {
 .slogan,
 .date,
 .license {
-    color: rgba(23, 81, 153, .72);
+    color: var(--nero);
 }
 
 .pagination {

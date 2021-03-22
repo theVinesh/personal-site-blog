@@ -3,8 +3,9 @@ title: "What do I use?"
 description: "{{ .Summary }}"
 slug: "what-do-i-use"
 tags: ["about me", "general"]
-date: 2020-06-21T02:53:51+05:30
-hidedate: true
+aliases: ["/uses/"]
+date: 2021-03-21T02:53:51+05:30
+# hidedate: true
 ---
 I use a lot of Tools, Apps and Services to get by everyday.
 I've listed down those that I love and use frequently here.
