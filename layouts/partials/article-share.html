@@ -7,19 +7,19 @@
     {{- with .hookText -}}<div class="hook-text">{{- . | markdownify -}}</div>{{- end -}}
     {{- with .whatsapp -}}
     <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=wa" target="_blank"
-        rel="noopener noreferrer"><img class="icon" src="/imgs/icon_whatsapp.png"></img>&nbsp;</a>
+        rel="noopener noreferrer"><img class="icon" src="/imgs/icon_whatsapp.png" width="48" height="48" alt="whatsapp"></img>&nbsp;</a>
     {{- end -}}
     {{- with .twitter -}}
     <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=twtr" target="_blank"
-        rel="noopener noreferrer"><img class="icon" src="/imgs/icon_twitter.png"></img>&nbsp;</a>
+        rel="noopener noreferrer"><img class="icon" src="/imgs/icon_twitter.png" width="48" height="48" alt="twitter"></img>&nbsp;</a>
     {{- end -}}
     {{- with .email -}}
     <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=mail" target="_blank"
-        rel="noopener noreferrer"><img class="icon" src="/imgs/icon_email.png"></img></span>&nbsp;</a>
+        rel="noopener noreferrer"><img class="icon" src="/imgs/icon_email.png" width="48" height="48" alt="email"></img></span>&nbsp;</a>
     {{- end -}}
     <div class="item tooltip">   
         <a class="item" href="{{- $url -}}?utm_medium=cpy" target="_blank"
-        rel="noopener noreferrer" onclick="copyURI(event)"><img class="icon" src="/imgs/icon_copy.png"></img>&nbsp;<span class="tooltip text" id="copy-tooltip"></span></a>
+        rel="noopener noreferrer" onclick="copyURI(event)"><img class="icon" src="/imgs/icon_copy.png" width="48" height="48" alt="copy"></img>&nbsp;<span class="tooltip text" id="copy-tooltip"></span></a>
     </div>
 </section>
 {{- end -}}
