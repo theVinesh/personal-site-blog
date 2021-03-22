@@ -1,0 +1,11 @@
+{{- $profile := site.Params.profile -}}
+{{- with $profile -}}
+<section class="article author">  
+    {{- with .avatar -}}<img class="avatar" src="{{- . | relURL -}}" alt>{{- end -}}
+</section>
+{{- end -}}
+{{- if .Content -}}
+<article class="article markdown-body">
+    {{- .Content -}}
+</article>
+{{- end -}}
