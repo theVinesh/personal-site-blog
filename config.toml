@@ -63,7 +63,7 @@ googleAnalytics = "UA-142502015-1"
 
 [params.profile]
   enable = true
-  avatar = "imgs/author.png"
+  avatar = "/imgs/avatar.png"
   name = "Vinesh Raju"
   description = '''
   Hi I'm a mobile applications developer with a deep focus on UX/UI.  

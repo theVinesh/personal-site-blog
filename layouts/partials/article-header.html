@@ -1,13 +1,14 @@
 {{- $profile := .Params.profile -}}
 {{- if not $profile -}}
-  {{- $profile = site.Params.profile -}}
+{{- $profile = site.Params.profile -}}
 {{- end -}}
 
 {{- with $profile -}}
 {{- if eq .enable true -}}
-<section class="article author">  
-    {{- with .avatar -}}<img class="avatar" src="{{- . | relURL -}}" alt>{{- end -}}
-  
+<section class="article author">
+    {{- with .avatar -}}<img class="avatar" width="64" height="64" src="{{- . | relURL -}}"
+        alt="{{- $profile.name -}}">{{- end -}}
+
     {{- with .name -}}<p class="name">{{- . -}}</p>{{- end -}}
 </section>
 {{- end -}}
@@ -20,27 +21,28 @@
     {{- $lastmodFormat := "" -}}
     {{- $lastmod := .Lastmod -}}
     {{- if $lastmod -}}
-        {{- $lastmodFormat = $lastmod.Format $dateFormat -}}
+    {{- $lastmodFormat = $lastmod.Format $dateFormat -}}
     {{- end -}}
     {{- if .Date -}}
-        {{- $dateFormat := .Date.Format $dateFormat -}}
-            {{- if not (eq .Params.hideDate true) -}}
-                <p class="article date">{{- $dateFormat -}}
-                    {{- if and ($lastmod.After .Date) (ne $lastmodFormat $dateFormat) -}}
-                        <span class="lastmod">{{- printf (T "edited") $lastmodFormat -}}</span>
-                    {{- end -}}
+    {{- $dateFormat := .Date.Format $dateFormat -}}
+    {{- if not (eq .Params.hideDate true) -}}
+    <p class="article date">{{- $dateFormat -}}
+        {{- if and ($lastmod.After .Date) (ne $lastmodFormat $dateFormat) -}}
+        <span class="lastmod">{{- printf (T "edited") $lastmodFormat -}}</span>
+        {{- end -}}
+        {{- end -}}
+        {{- if or (eq .Params.readingTime true) (and (not (eq .Params.readingTime false)) (eq site.Params.readingTime
+        true)) -}}
+        <span class="reading-time">{{ T "readingTime" .ReadingTime }}</span>
+        {{- end -}}
+        {{- if .IsTranslated -}}
+        <span class="langs">
+            {{- range .Translations -}}
+            <span class="lang"><a href="{{- .RelPermalink -}}">{{- .Lang -}}</a></span>
             {{- end -}}
-            {{- if or (eq .Params.readingTime true) (and (not (eq .Params.readingTime false)) (eq site.Params.readingTime true)) -}}
-            <span class="reading-time">{{ T "readingTime" .ReadingTime }}</span>
-            {{- end -}}
-            {{- if .IsTranslated -}}
-            <span class="langs">
-                {{- range .Translations -}}
-                <span class="lang"><a href="{{- .RelPermalink -}}">{{- .Lang -}}</a></span>
-                {{- end -}}
-            </span>
-            {{- end -}}
-        </p>
+        </span>
+        {{- end -}}
+    </p>
     {{- end -}}
     {{- partial "article-header-extra.html" . -}}
 </section>
