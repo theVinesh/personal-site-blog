@@ -1,8 +1,13 @@
 {{- $profile := site.Params.profile -}}
 {{- with $profile -}}
 <section class="article author">
-    {{- with .avatar -}}<img class="avatar" width="64" height="64" src="{{- . | relURL -}}"
-        alt="{{- $profile.name -}}">{{- end -}}
+    {{- with .avatar -}}
+    <picture>
+        <source type='image/webp' srcset='{{- . | relURL -}}'>
+        <img src='{{- . | relURL | replace ".png" ".webp" -}}' alt='{{- $profile.name -}}' height=64 width=64
+            class="avatar">
+    </picture>
+    {{- end -}}
 </section>
 {{- end -}}
 {{- if .Content -}}
