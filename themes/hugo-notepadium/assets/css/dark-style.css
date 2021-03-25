@@ -28,7 +28,7 @@ mark {
 }
 
 pre {
-    background-color: #393b3d;
+    background-color: var(--codeBlue);
 }
 
 .slogan,
@@ -54,8 +54,8 @@ code,
 kbd,
 tt,
 samp {
-    color: #e5c07b;
-    background-color: rgba(240, 246, 252, 0.05);
+    color: var(--codeWhite);
+    background-color: var(--codeBlue);
 }
 
 a {

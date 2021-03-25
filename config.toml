@@ -43,8 +43,8 @@ googleAnalytics = "UA-142502015-1"
 
 [params.syntax]
   use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-  theme = "xcode"
-  darkTheme = "xcode-dark"  # apply this theme in dark mode
+  theme = "github"
+  darkTheme = "github-dark"  # apply this theme in dark mode
 
 [params.share]
   enable = true

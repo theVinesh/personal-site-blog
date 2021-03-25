@@ -8,6 +8,7 @@
       {{- $relURL := replace .RelPermalink "#" "%23" -}}
       {{- $relURL = replace $relURL "." "%2e" -}}
     <li class="item"><a class="note" href="{{- $relURL -}}">
+            {{- with .Params.cover -}}<p><img class="cover" src="{{- . | safeURL -}}" alt></p>{{- end -}}
             <p class="note title">{{- .Title | safeHTML -}}</p>
             {{- if .Date -}}
                 {{- if not (eq .Params.hideDate true) -}}

@@ -2,6 +2,15 @@ body {
     font-family: "Oxygen Mono";
 }
 
+.article.author.top {
+    padding-bottom: 16px;
+}
+
+.article.author.top .name {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
 .article.share {
     margin-top: 16px;
 }
