@@ -9,7 +9,7 @@
     {{- with .avatar -}}
     <picture>
         <source type='image/webp' srcset='{{- . | relURL -}}'>
-        <img src='{{- . | relURL | replace ".png" ".webp" -}}' alt='{{- $profile.name -}}' height=64 width=64
+        <img src='{{- . | relURL | replace ".webp" ".png" -}}' alt='{{- $profile.name -}}' height=64 width=64
             class="avatar">
     </picture>
     {{- end -}}
