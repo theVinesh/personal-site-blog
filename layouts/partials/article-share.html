@@ -6,19 +6,19 @@
 <section class="article share noprint">
     {{- with .hookText -}}<div class="hook-text">{{- . | markdownify -}}</div>{{- end -}}
     {{- with .whatsapp -}}
-    <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=wa" target="_blank"
+    <a class="item" href="{{- . | safeHTML -}}{{- $url -}}" target="_blank"
         rel="noopener noreferrer"><img class="icon" src="/imgs/icon_whatsapp.png" width="48" height="48" alt="whatsapp"></img></a>
     {{- end -}}
     {{- with .twitter -}}
-    <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=twtr" target="_blank"
+    <a class="item" href="{{- . | safeHTML -}}{{- $url -}}" target="_blank"
         rel="noopener noreferrer"><img class="icon" src="/imgs/icon_twitter.png" width="48" height="48" alt="twitter"></img></a>
     {{- end -}}
     {{- with .email -}}
-    <a class="item" href="{{- . | safeHTML -}}{{- $url -}}?utm_medium=mail" target="_blank"
+    <a class="item" href="{{- . | safeHTML -}}{{- $url -}}" target="_blank"
         rel="noopener noreferrer"><img class="icon" src="/imgs/icon_email.png" width="48" height="48" alt="email"></img></a>
     {{- end -}}
     <div class="item tooltip">   
-        <a class="copy-button" href="{{- $url -}}?utm_medium=cpy" target="_blank"
+        <a class="copy-button" href="{{- $url -}}" target="_blank"
         rel="noopener noreferrer" onclick="copyURI(event)" onmouseout="hideCopyToolTip()"><img class="icon" src="/imgs/icon_copy.png" width="48" height="48" alt="copy"></img><span class="tooltip text" id="copy-tooltip"></span></a>
     </div>
 </section>
