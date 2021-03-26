@@ -1,0 +1,11 @@
+{{ if .IsNamedParams }}
+<picture>
+    <source type='image/webp' srcset='{{.Get "src" | safeURL }}'>
+    <img src='{{.Get "src" | replaceRE  ".webp$" ".png" | safeURL }}' alt='{{.Get "alt" }}' height='{{.Get "height" }}'
+        width='{{.Get "width" }}' class='{{.Get "class" }}'>
+</picture>
+{{ else }}
+<picture>
+    <source type='image/webp' srcset='{{.Get 0 }}'>
+    <img src='{{.Get 0 }}' alt>
+</picture>{{ end }}

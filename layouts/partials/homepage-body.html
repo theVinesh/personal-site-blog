@@ -4,8 +4,8 @@
     {{- with .avatar -}}
     <picture>
         <source type='image/webp' srcset='{{- . | relURL -}}'>
-        <img src='{{- . | relURL | replace ".png" ".webp" -}}' alt='{{- $profile.name -}}' height=64 width=64
-            class="avatar">
+        <img src='{{- . | relURL | replaceRE  ".webp$" ".png" | safeURL -}}' alt='{{- $profile.name -}}' height=64
+            width=64 class="avatar">
     </picture>
     {{- end -}}
 </section>

@@ -16,11 +16,12 @@ body {
 }
 
 .article.share .item .icon {
-    padding: 12px;
+    padding: 8px;
 }
 
 .article.share .item {
     text-decoration: none;
+    border: none;
     display: inline-block;
     margin-right: 8px;
     height: 48px;
