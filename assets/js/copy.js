@@ -1,19 +1,20 @@
 function copyURI(event) {
   event.preventDefault();
-  
+
   var clipboard = new ClipboardJS('.copy-button', {
-    text: function(trigger) {
-        return trigger.getAttribute('href');
+    text: function (trigger) {
+      const link = decodeURI(trigger.getAttribute('href'));
+      return link;
     }
-});
+  });
 
   clipboard.on('success', function (e) {
     showCopyTooltip('Copied!')
   });
 
-  clipboard.on('error', function(e) {
+  clipboard.on('error', function (e) {
     showCopyTooltip('Couldn\'t copy')
-});
+  });
 }
 
 function showCopyTooltip(message) {
