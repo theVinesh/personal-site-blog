@@ -4,10 +4,10 @@
 <div class="article-container">
   {{- partial "article-header.html" . -}}
   <article class="article markdown-body" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
-    {{- with .Params.cover -}}
+    {{- with .Params -}}
     <picture>
-      <source type='image/webp' srcset='{{- . | safeURL -}}'>
-      <img src='{{- . | replaceRE  ".webp$" ".png" | safeURL -}}' class="cover" alt>
+      <source type='image/webp' srcset='{{- .cover | safeURL -}}'>
+      <img src='{{- .cover | replaceRE  ".webp$" ".png" | safeURL -}}' class="cover" alt= "{{- .title -}}" width="100%" height="256px">
     </picture>
     {{- end -}}
     {{- .Content -}}

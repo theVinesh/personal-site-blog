@@ -11,8 +11,8 @@
             {{- with .Params.coverRelURL -}}
             <picture>
                 <source type='image/webp' srcset='{{- . | safeURL -}}'>
-                <img src='{{ . | replaceRE  ".webp$" ".png" | safeURL }}' height=auto width='100%' class='cover' alt>
-            </picture>
+                    <img src='{{- . | replaceRE  ".webp$" ".png" | safeURL -}}' class="cover" alt= "{{- . | safeURL -}}" width="100%" height="256px">
+                </picture>
             {{- end -}}
             <p class="note title">{{- .Title | safeHTML -}}</p>
             {{- if .Date -}}
