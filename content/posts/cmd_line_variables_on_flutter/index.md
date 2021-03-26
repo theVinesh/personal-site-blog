@@ -2,16 +2,18 @@
 title: "Command line variables on Flutter using --dart-define"
 tags: ["flutter", "tech"]
 date: 2021-03-25T04:42:02+05:30
-cover: command_line.webp
+cover: "command_line.webp"
 coverAbsURL: /posts/cmd_line_variables_on_flutter/command_line.webp
 ---
 
-This post explains how to send command line variables to flutter.  
+This post explains how to send command line variables and use them with flutter.  
 
 ## Why send variables via command line?
+Being able to set a variable through command line comes in very handy whenever you want to change the variable depending on the environment/client it's being built for. Without having to change code manually every time.    
+
 A few common use cases would be 
-- to configure your app's base url during build time.
-- to use separate api keys or client ids for development and production.
+- to configure your app's base URL during build time.
+- to use separate API keys or client ids for development and production.
 
 ## --dart-define to the rescue
 `--dart-define` helps send key-value pairs to flutter at build time.  

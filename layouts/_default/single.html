@@ -7,7 +7,7 @@
     {{- with .Params.cover -}}
     <picture>
       <source type='image/webp' srcset='{{- . | safeURL -}}'>
-      <img src='{{- . | relURL | replaceRE  ".webp$" ".png" | safeURL -}}' class="cover" alt>
+      <img src='{{- . | replaceRE  ".webp$" ".png" | safeURL -}}' class="cover" alt>
     </picture>
     {{- end -}}
     {{- .Content -}}

@@ -5,7 +5,7 @@ tags: ["about me", "general"]
 aliases: ["/uses/"]
 date: 2021-03-21T02:53:51+05:30
 ---
-I use a lot of Tools, Apps and Services to get by everyday.
+I use a lot of Tools, Apps, and Services to get by every day.
 I've listed down those that I love and use frequently here.
 
 ## Services.
@@ -26,5 +26,5 @@ I've listed down those that I love and use frequently here.
 - iPhone 11 - as my daily driver.
 - OnePlus 6 - for testing my apps.
 - MacBook Pro 13" 2019 - as my primary computer.
-- AirPods Pro - to hear to music.
+- AirPods Pro - to hear music.
 - ~~Fossil Hybrid - as a fitness tracker.~~
