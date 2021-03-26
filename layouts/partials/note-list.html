@@ -8,7 +8,7 @@
     {{- $relURL := replace .RelPermalink "#" "%23" -}}
     {{- $relURL = replace $relURL "." "%2e" -}}
     <li class="item"><a class="note" href="{{- $relURL -}}">
-            {{- with .Params.coverAbsURL -}}
+            {{- with .Params.coverRelURL -}}
             <picture>
                 <source type='image/webp' srcset='{{- . | safeURL -}}'>
                 <img src='{{ . | replaceRE  ".webp$" ".png" | safeURL }}' height=auto width='100%' class='cover' alt>

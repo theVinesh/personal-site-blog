@@ -3,7 +3,7 @@ title: "Command line variables on Flutter using --dart-define"
 tags: ["flutter", "tech"]
 date: 2021-03-25T04:42:02+05:30
 cover: "command_line.webp"
-coverAbsURL: /posts/cmd_line_variables_on_flutter/command_line.webp
+coverRelURL: /posts/cmd_line_variables_on_flutter/command_line.webp
 ---
 
 This post explains how to send command line variables and use them with flutter.  

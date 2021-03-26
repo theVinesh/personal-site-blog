@@ -1,0 +1,39 @@
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@{{ site.Params.profile.handle }}" />
+<meta name="twitter:creator" content="@{{ site.Params.profile.handle }}" />
+<meta name="twitter:title" content="{{- .Title -}}" />
+<meta property="og:title" content="{{- .Title -}}" />
+<meta property="og:url" content="{{- .Permalink -}}" />
+
+{{- $imgurl := "" -}}
+
+{{- if .Params.cover -}}
+{{- $imgurl = .Params.cover -}}
+{{- else if .Params.imgs -}}
+{{- $imgurl = index .Params.imgs 0 -}}
+{{- end -}}
+
+{{- if gt (len $imgurl) 0 -}}
+{{- $imgurl = lower $imgurl -}}
+{{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) -}}
+{{- $imgurl = print .Permalink $imgurl -}}
+{{- end -}}
+<meta property="og:image" content="{{- $imgurl -}}" />
+<meta name="twitter:image" content="{{- $imgurl -}}" />
+{{- end -}}
+{{- if eq (len $imgurl) 0 -}}
+
+{{- $avatarImg := site.Params.profile.avatar | safeURL | absURL -}}
+<meta property="og:image" content="{{- $avatarImg -}}" />
+<meta name="twitter:image" content="{{- $avatarImg -}}" />
+{{- end -}}
+
+{{- $summary := .Summary -}}
+{{- if not $summary -}}
+{{- $summary = site.Params.profile.description -}}
+{{- end -}}
+{{- if $summary -}}
+<meta name="description" content="{{- $summary | plainify | safeHTML -}}">
+<meta property="og:description" content="{{- $summary | plainify | safeHTML -}}" />
+{{- end -}}

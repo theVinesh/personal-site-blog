@@ -76,3 +76,5 @@ googleAnalytics = "UA-142502015-1"
 
 [params.font]
   googlefont = "Oxygen Mono"
+
+staticDir = ["static"]
