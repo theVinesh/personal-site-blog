@@ -1,3 +1,3 @@
-{{- $clipboardJS := resources.Get "/js/clipboard.min.js" -}}
+{{- $clipboardJS := resources.Get "/js/clipboard.js" -}}
 {{- $clipboardJS = $clipboardJS | resources.Minify | resources.Fingerprint "sha384" -}}
 <script defer src="{{- $clipboardJS.RelPermalink -}}" integrity="{{- $clipboardJS.Data.Integrity -}}"></script>
