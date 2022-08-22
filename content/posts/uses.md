@@ -3,7 +3,7 @@ title: "What do I use?"
 slug: "what-do-i-use"
 tags: ["about me", "general"]
 aliases: ["/uses/"]
-date: 2022-03-27T23:30:00+01:00
+date: 2021-03-20T23:30:00+01:00
 ---
 I use a lot of Tools, Apps, and Services to get by every day.
 I've listed down those that I love and use frequently here.
@@ -14,7 +14,6 @@ I've listed down those that I love and use frequently here.
 - [Google Domains](https://domains.google.com/) - to get and manage domains.
 - [Airtable](https://airtable.com/invite/r/dYQWU0zt/) - as a backend for my experiments and side projects.
 - [Netlify](https://netlify.com/) and [Firebase](https://firebase.google.com/products/hosting/) - to Host.
-- [Del.dog](https://del.dog/) - to Shorten urls, take and share notes.
 ## Apps.
 - [Youtube Music](https://music.youtube.com/) - to listen to music.
 - [Firefox](https://www.mozilla.org/en-US/firefox/) - as my main browser.
