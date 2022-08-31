@@ -1,7 +1,7 @@
 ---
 title: "What do I use?"
 slug: "what-do-i-use"
-tags: ["about me", "general"]
+categories: ["about me", "general"]
 aliases: ["/uses/"]
 date: 2021-03-20T23:30:00+01:00
 ---

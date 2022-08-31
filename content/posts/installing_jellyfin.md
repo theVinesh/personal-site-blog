@@ -3,8 +3,7 @@ title: "Installing Jellyfin Media System"
 description: "This is a guide to install Jellyfin with Docker"
 date: 2022-08-31T00:44:57+01:00
 lastmod: 2022-08-31T00:44:57+01:00
-tags: ["tech", "jellifin", "self hosted", "home server"]
-categories: ["tech", "home server"]
+categories: ["tech", "jellifin", "self hosted", "home server"]
 imgs: []
 cover: ""  # image show on top
 readingTime: true  # show reading time after article date

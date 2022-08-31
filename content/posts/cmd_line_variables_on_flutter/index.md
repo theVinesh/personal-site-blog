@@ -1,6 +1,6 @@
 ---
 title: "Command line variables on Flutter using --dart-define"
-tags: ["flutter", "tech"]
+categories: ["flutter", "tech"]
 date: 2021-03-25T04:42:02+05:30
 cover: "command_line.webp"
 coverRelURL: /posts/cmd_line_variables_on_flutter/command_line.webp

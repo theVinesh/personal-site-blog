@@ -1,6 +1,6 @@
 ---
 title: "In the beginning"
-tags: ["about me", "general"]
+categories: ["about me", "general"]
 date: 2021-03-21T02:52:51+05:30
 hidedate: true
 ---

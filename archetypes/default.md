@@ -3,8 +3,7 @@ title: "{{ replace .Name "_" " " | title }}"
 description: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
-tags: []
-categories: []
+categories: [] #broad category
 imgs: []
 cover: ""  # image show on top
 readingTime: true  # show reading time after article date
