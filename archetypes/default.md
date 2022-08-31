@@ -14,7 +14,7 @@ justify: false  # text-align: justify;
 single: false  # display as a single page, hide navigation on bottom, like as about page.
 license: ""  # CC License
 draft: true
-coverRelURL: "{{ .Params.cover | safeURL | relURL }}"  # abs url of cover
+coverRelURL: ""  # abs url of cover
 hidedate: false # to hide date
 ---
 
